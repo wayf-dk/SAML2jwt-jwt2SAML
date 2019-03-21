@@ -7,7 +7,7 @@ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA54K3rUT473T2Ot5VRXW0UdB72beHrXZbfw5q
 
 $saml2jwt       = 'https://wayf.wayf.dk/saml2jwt';
 $saml2jwtIssuer = 'sp.entity.test';
-$saml2jwtACS    = 'http://entity.test:8080/sp';
+$saml2jwtACS    = 'http://sp.entity.test:8080';
 $idplist        = []; //['idp.entity.test'];
 
 $query = ['acs'    =>  $saml2jwtACS,
@@ -36,7 +36,7 @@ if (empty($_POST['SAMLResponse'])) {
     header('content-type: text/plain');
 
     foreach(['iat', 'nbf', 'exp'] as $k ) {
-//        $payload[$k] = date(DATE_ISO8601, $payload[$k]);
+        //$payload[$k] = date(DATE_ISO8601, $payload[$k]);
     }
 
     print_r($payload);
