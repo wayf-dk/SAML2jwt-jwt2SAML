@@ -12,3 +12,14 @@ for the duration of the session.
 * Point your browser to http://sp.entity.test
 * Experiment with changing the attributes in the $payload in the idp.php
 
+The idp.entity.test IdP is 'open' in the sense that you can make it send any attributes - as long as the eppn ends
+with '@entity.test'.
+
+It is though only member of the ad-hoc federation 'entity.test' so you will
+restricted to send responses only to a SP that is also in the ad-hoc federation 'entity.test'.
+
+The sp.entity.test SP is also member of the ad-hoc federation
+'entity.test' and thus is allowed to use idp.entity.test as IdP.
+
+If you want to use idp.entity.test as an IdP for testing your own SP you need to contact the WAYF secretariat
+for adding it to the 'entity.test' ad-hoc federation.
