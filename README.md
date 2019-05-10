@@ -9,7 +9,7 @@ PHP demo libraries for WAYF SAML2jwt and jwt2SAML back-channel services
 https://wayfsp.wayf.dk and click on the "Use Hybrid QA" button. This will make your browser use the WAYF QA back-end
 for the duration of the session.
 * Enable the SAML Tracing
-* Point your browser to http://sp.entity.test
+* Point your browser to http://sp.entity.test:8080
 * Experiment with changing the attributes in the $payload in the idp.php
 
 The idp.entity.test IdP is 'open' in the sense that you can make it send any attributes - as long as the eppn ends
